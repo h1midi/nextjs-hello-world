@@ -1,23 +1,36 @@
-# Next.js Hello World
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-This example shows the most basic idea behind Next. We have 2 pages: `src/pages/index.js` and `src/pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities.
+First, run the development server:
 
-The app in this repo is deployed at https://next-js.onrender.com.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Deploy as Node Web Service
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Click the button below to deploy this app on Render.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
-## Deploy as Static Site
+To learn more about Next.js, take a look at the following resources:
 
-1. Modify the code:
-    1. In `render.yaml`, replace the definition of the service named `next-js` with the definition that is commented out.
-    2. In `next.config.mjs`, uncomment the line that sets `output: "export"`.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-2. Commit the code changes to your repository.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-3. Click the Deploy to Render button.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
