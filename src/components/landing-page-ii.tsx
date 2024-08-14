@@ -14,7 +14,7 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 import {useTranslations} from 'next-intl';
 import Link from "next/link"
 import LocalSwitcher from './local-switcher';
-
+import Image from 'next/image';
 export function LandingPageII() {
 const t = useTranslations('HomePage');
 const contactRef =  useRef<null | HTMLDivElement>(null); 
@@ -58,7 +58,7 @@ useEffect(() => {
       setIsButtonLoaded(true);
     }
   }
-}, [isScriptLoaded, isButtonLoaded]);
+}, [t,isScriptLoaded, isButtonLoaded]);
 
 const scrollToContact = () => {
   contactRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -67,8 +67,9 @@ return (
     <div className="w-full">
       <header className="flex items-center justify-between p-4 bg-white shadow-md">
         <div className="flex items-center">
-        <img
+        <Image
             src="/logo.png"
+            alt="Logo"
             className="h-8"
           />
         </div>
@@ -86,7 +87,7 @@ return (
           <div className="mt-6 " ref={scriptContainerRef}></div>
         </div>
         <div className="mt-8 max-w-4xl">
-          <img
+          <Image
             src="/teaching.png"
             width={1280}
             height={720}
@@ -227,7 +228,7 @@ return (
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow p-6">
             <blockquote>
               <p className="text-lg font-semibold">
-             " {t('testimonial-1')}"
+              &quot;{t('testimonial-1')}&quot;
               </p>
               <div className="mt-4 flex items-center">
                 <Avatar>
@@ -244,7 +245,7 @@ return (
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow p-6">
             <blockquote>
               <p className="text-lg font-semibold">
-             " {t('testimonial-2')}"
+              &quot;{t('testimonial-2')}&quot;
               </p>
               <div className="mt-4 flex items-center">
                 <Avatar>

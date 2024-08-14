@@ -9,14 +9,16 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Link from "next/link"
+import Image from "next/image"
 
 export function LandingPage() {
   return (
     <div className="w-full">
       <header className="flex items-center justify-between p-4 bg-white shadow-md">
         <div className="flex items-center">
-        <img
+        <Image
             src="/logo.png"
+            alt="Coneduc Logo"
             className="h-8"
           />
         </div>
@@ -34,7 +36,7 @@ export function LandingPage() {
       <section className="p-8">
         <h2 className="text-3xl font-bold text-center">For Teaching</h2>
         <div className="mx-auto max-w-4xl mt-8">
-          <img
+          <Image
             src="/teaching.png"
             width={1280}
             height={720}
@@ -69,7 +71,7 @@ export function LandingPage() {
               <UsersIcon className="w-12 h-12 text-primary" />
               <h3 className="text-xl font-semibold mt-4">Manage Your Students</h3>
               <p className="mt-2 text-muted-foreground">
-                Effortlessly oversee your students' progress and engagement. Our AI-powered tools streamline
+                Effortlessly oversee your students&apos; progress and engagement. Our AI-powered tools streamline
                 communication, grading, and administrative tasks, so you can focus on teaching.
               </p>
             </div>
@@ -79,7 +81,7 @@ export function LandingPage() {
               <BarChartIcon className="w-12 h-12 text-primary" />
               <h3 className="text-xl font-semibold mt-4">Valuable Insights</h3>
               <p className="mt-2 text-muted-foreground">
-                Unlock the power of data analytics to gain valuable insights into your academy's performance and the
+                Unlock the power of data analytics to gain valuable insights into your academy&apos;s performance and the
                 effectiveness of your courses. Our platform provides comprehensive analytics tools.
               </p>
             </div>
@@ -90,7 +92,7 @@ export function LandingPage() {
         <h2 className="text-3xl font-bold text-center">For Learning</h2>
         <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4 justify-items-center">
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow">
-            <img
+            <Image
               src="/explore.png"
               width={300}
               height={450}
@@ -103,12 +105,12 @@ export function LandingPage() {
               <h3 className="text-xl font-semibold mt-4">Explore Courses</h3>
               <p className="mt-2 text-muted-foreground">
                 Discover a diverse range of courses taught by passionate educators from around the world. From academic
-                subjects to practical skills, there's something for everyone.
+                subjects to practical skills, there&apos;s something for everyone.
               </p>
             </div>
           </div>
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow">
-          <img
+          <Image
             src="/learning.png"
             width={300}
             height={450}
@@ -126,7 +128,7 @@ export function LandingPage() {
             </div>
           </div>
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow">
-            <img
+            <Image
               src="/practice.png"
               width={300}
               height={450}
@@ -144,7 +146,7 @@ export function LandingPage() {
             </div>
           </div>
           <div className="bg-card text-card-foreground shadow-md hover:shadow-lg transition-shadow">
-            <img
+            <Image
               src="/progress.png"
               width={300}
               height={450}
@@ -230,7 +232,7 @@ export function LandingPage() {
               </CollapsibleTrigger>
               <CollapsibleContent className="p-4">
                 <p className="text-muted-foreground">
-                  To get started with Coneduc, simply schedule a demo with our team. They'll guide you through the
+                  To get started with Coneduc, simply schedule a demo with our team. They&apos;ll guide you through the
                   platform and help you set up your online academy.
                 </p>
               </CollapsibleContent>
